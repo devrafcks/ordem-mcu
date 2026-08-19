@@ -457,6 +457,11 @@ main {
 
 .card-type.film { background: rgba(230, 36, 41, 0.18); color: #ff6b6f; }
 .card-type.serie { background: rgba(212, 165, 55, 0.18); color: var(--gold); }
+.card-type.optional {
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px dashed var(--card-border);
+}
 
 .fox .card-type.film { background: rgba(46, 111, 217, 0.18); color: #6fa2ff; }
 
