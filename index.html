@@ -3,33 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ordem MCU: Todas as Fases</title>
+<title>Ordem MCU: Cronologia Completa</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="hero" id="hero">
-  <canvas id="hero-canvas" class="hero-canvas"></canvas>
-  <div class="hero-nebula" id="hero-nebula"></div>
   <div class="hero-bg" id="hero-bg" style="background-image:url('assets/image.png')"></div>
   <div class="hero-overlay"></div>
   <div class="hero-inner">
     <p class="eyebrow">Guia Completo</p>
     <h1 id="hero-title">ORDEM <span>MCU</span></h1>
-    <p class="subtitle">Todos os filmes e séries do Universo Cinematográfico Marvel, organizados por fase, além do universo Fox de X-Men, Deadpool, Wolverine e Logan.</p>
+    <p class="subtitle">Todos os filmes e séries do Universo Cinematográfico Marvel, organizados em ordem cronológica de história, além dos filmes de X-Men.</p>
   </div>
   <div class="scroll-cue">role para explorar</div>
 </header>
 
 <nav class="phase-nav" id="phase-nav">
-  <a href="#intro">O que é o MCU</a>
-  <a href="#fase1">Fase 1</a>
-  <a href="#fase2">Fase 2</a>
-  <a href="#fase3">Fase 3</a>
-  <a href="#fase4">Fase 4</a>
-  <a href="#fase5">Fase 5</a>
-  <a href="#fase6">Fase 6</a>
-  <a href="#foxverse">Universo Fox</a>
+  <div class="phase-nav-inner">
+    <div class="phase-nav-links">
+      <a href="#intro">O que é</a>
+      <a href="#saga-infinito">Saga do Infinito</a>
+      <a href="#saga-multiverso">Saga do Multiverso</a>
+      <a href="#foxverse">X-Men</a>
+    </div>
+  </div>
+  <div class="nav-progress" id="nav-progress"></div>
 </nav>
 
 <main>
@@ -39,116 +38,80 @@
       <span class="phase-tag">O que é</span>
       <h2>MCU: Marvel Cinematic Universe</h2>
       <p><strong>MCU</strong> é a sigla de <strong>Marvel Cinematic Universe</strong> (Universo Cinematográfico Marvel), a franquia de mídia produzida pela Marvel Studios que conecta filmes, séries e curtas em uma única continuidade compartilhada, algo inédito em Hollywood até então. Tudo começou em 2008 com <strong>Homem de Ferro</strong>, sob o comando do produtor <strong>Kevin Feige</strong>.</p>
-      <p>O universo é dividido em <strong>Sagas</strong>, que agrupam várias <strong>Fases</strong>: a <strong>Saga do Infinito</strong> (Fases 1 a 3, encerrada em Vingadores: Ultimato) e a <strong>Saga do Multiverso</strong> (Fases 4 a 6, em andamento, com desfecho previsto em Vingadores: Guerra Secreta). Desde a compra da 20th Century Fox pela Disney em 2019, personagens como X-Men, Deadpool e Wolverine também passaram a poder cruzar com o MCU.</p>
+      <p>Oficialmente, a Marvel Studios organiza tudo em <strong>Sagas</strong> e <strong>Fases</strong> por ordem de lançamento: a <strong>Saga do Infinito</strong> (Fases 1 a 3, encerrada em Vingadores: Ultimato) e a <strong>Saga do Multiverso</strong> (Fases 4 a 6, em andamento, com desfecho previsto em Vingadores: Guerra Secreta). Desde a compra da 20th Century Fox pela Disney em 2019, personagens como X-Men, Deadpool e Wolverine também passaram a poder cruzar com o MCU.</p>
+      <p>Este guia, porém, segue a <strong>ordem cronológica interna</strong>: a sequência em que os eventos acontecem dentro da própria história, e não a ordem em que foram lançados nos cinemas. É por isso que Guardiões da Galáxia Vol. 2 aparece logo após o primeiro (mesmo lançado 3 anos depois), e Homem-Aranha: Longe de Casa vem depois do Blip, e não junto da Fase 3.</p>
     </div>
   </section>
 
-  <section class="phase-section" id="fase1">
+  <section class="phase-section" id="saga-infinito">
     <div class="phase-header saga-infinity">
-      <span class="phase-tag">Fase 1</span>
-      <h2>A Saga do Infinito: Origens</h2>
-      <p>2008 a 2012</p>
+      <span class="phase-tag">Saga 1</span>
+      <h2>A Saga do Infinito</h2>
     </div>
     <div class="timeline">
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-de-ferro.jpg" alt="Capa de Homem de Ferro" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem de Ferro</h3><p>2008</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/incrivel-hulk.jpg" alt="Capa de O Incrível Hulk" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>O Incrível Hulk</h3><p>2008</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-de-ferro-2.jpg" alt="Capa de Homem de Ferro 2" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem de Ferro 2</h3><p>2010</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/thor.jpg" alt="Capa de Thor" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Thor</h3><p>2011</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/capitao-america-1.jpg" alt="Capa de Capitão América: O Primeiro Vingador" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Capitão América: O Primeiro Vingador</h3><p>2011</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/quarteto-fantastico-primeiros-passos.jpg" alt="Capa de Quarteto Fantástico: Primeiros Passos" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Quarteto Fantástico: Primeiros Passos</h3><p>2025</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/capita-marvel.jpg" alt="Capa de Capitã Marvel" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Capitã Marvel</h3><p>2019</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-de-ferro.jpg" alt="Capa de Homem de Ferro" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem de Ferro</h3><p>2008</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-de-ferro-2.jpg" alt="Capa de Homem de Ferro 2" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem de Ferro 2</h3><p>2010</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/incrivel-hulk.jpg" alt="Capa de O Incrível Hulk" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>O Incrível Hulk</h3><p>2008</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/thor.jpg" alt="Capa de Thor" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Thor</h3><p>2011</p></div></div></article>
       <article class="timeline-item highlight"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/os-vingadores.jpg" alt="Capa de Os Vingadores" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Os Vingadores</h3><p>2012</p></div></div></article>
-    </div>
-  </section>
-
-  <section class="phase-section" id="fase2">
-    <div class="phase-header saga-infinity">
-      <span class="phase-tag">Fase 2</span>
-      <h2>A Saga do Infinito: Expansão</h2>
-      <p>2013 a 2015</p>
-    </div>
-    <div class="timeline">
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-de-ferro-3.jpg" alt="Capa de Homem de Ferro 3" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem de Ferro 3</h3><p>2013</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/thor-mundo-sombrio.jpg" alt="Capa de Thor: O Mundo Sombrio" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Thor: O Mundo Sombrio</h3><p>2013</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-de-ferro-3.jpg" alt="Capa de Homem de Ferro 3" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem de Ferro 3</h3><p>2013</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/capitao-america-soldado-invernal.jpg" alt="Capa de Capitão América: O Soldado Invernal" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Capitão América: O Soldado Invernal</h3><p>2014</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/guardioes-da-galaxia.jpg" alt="Capa de Guardiões da Galáxia" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Guardiões da Galáxia</h3><p>2014</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/guardioes-da-galaxia-vol-2.jpg" alt="Capa de Guardiões da Galáxia Vol. 2" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Guardiões da Galáxia Vol. 2</h3><p>2017</p></div></div></article>
       <article class="timeline-item highlight"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/vingadores-era-de-ultron.jpg" alt="Capa de Vingadores: Era de Ultron" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Vingadores: Era de Ultron</h3><p>2015</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-formiga.jpg" alt="Capa de Homem-Formiga" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem-Formiga</h3><p>2015</p></div></div></article>
-    </div>
-  </section>
-
-  <section class="phase-section" id="fase3">
-    <div class="phase-header saga-infinity">
-      <span class="phase-tag">Fase 3</span>
-      <h2>A Saga do Infinito: Clímax</h2>
-      <p>2016 a 2019</p>
-    </div>
-    <div class="timeline">
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/capitao-america-guerra-civil.jpg" alt="Capa de Capitão América: Guerra Civil" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Capitão América: Guerra Civil</h3><p>2016</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/doutor-estranho.jpg" alt="Capa de Doutor Estranho" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Doutor Estranho</h3><p>2016</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/guardioes-da-galaxia-vol-2.jpg" alt="Capa de Guardiões da Galáxia Vol. 2" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Guardiões da Galáxia Vol. 2</h3><p>2017</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-aranha-de-volta-ao-lar.jpg" alt="Capa de Homem-Aranha: De Volta ao Lar" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem-Aranha: De Volta ao Lar</h3><p>2017</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/thor-ragnarok.jpg" alt="Capa de Thor: Ragnarok" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Thor: Ragnarok</h3><p>2017</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/viuva-negra.jpg" alt="Capa de Viúva Negra" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Viúva Negra</h3><p>2021</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/pantera-negra.jpg" alt="Capa de Pantera Negra" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Pantera Negra</h3><p>2018</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-aranha-de-volta-ao-lar.jpg" alt="Capa de Homem-Aranha: De Volta ao Lar" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem-Aranha: De Volta ao Lar</h3><p>2017</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/doutor-estranho.jpg" alt="Capa de Doutor Estranho" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Doutor Estranho</h3><p>2016</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/thor-ragnarok.jpg" alt="Capa de Thor: Ragnarok" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Thor: Ragnarok</h3><p>2017</p></div></div></article>
       <article class="timeline-item highlight"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/vingadores-guerra-infinita.jpg" alt="Capa de Vingadores: Guerra Infinita" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Vingadores: Guerra Infinita</h3><p>2018</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-formiga-e-a-vespa.jpg" alt="Capa de Homem-Formiga e a Vespa" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem-Formiga e a Vespa</h3><p>2018</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/capita-marvel.jpg" alt="Capa de Capitã Marvel" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Capitã Marvel</h3><p>2019</p></div></div></article>
       <article class="timeline-item highlight"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/vingadores-ultimato.jpg" alt="Capa de Vingadores: Ultimato" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Vingadores: Ultimato</h3><p>2019</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-aranha-longe-de-casa.jpg" alt="Capa de Homem-Aranha: Longe de Casa" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem-Aranha: Longe de Casa</h3><p>2019</p></div></div></article>
     </div>
   </section>
 
-  <section class="phase-section" id="fase4">
+    </div>
+  </section>
+
+  <section class="phase-section" id="saga-multiverso">
     <div class="phase-header saga-multiverso">
-      <span class="phase-tag">Fase 4</span>
-      <h2>A Saga do Multiverso: Início</h2>
-      <p>2021 a 2022</p>
+      <span class="phase-tag">Saga 2</span>
+      <h2>A Saga do Multiverso</h2>
     </div>
     <div class="timeline">
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/wandavision.png" alt="Capa de WandaVision" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>WandaVision</h3><p>2021</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/falcao-e-o-soldado-invernal.png" alt="Capa de O Falcão e o Soldado Invernal" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>O Falcão e o Soldado Invernal</h3><p>2021</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/loki.png" alt="Capa de Loki" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Loki</h3><p>2021</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/viuva-negra.jpg" alt="Capa de Viúva Negra" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Viúva Negra</h3><p>2021</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/what-if.png" alt="Capa de What If...?" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>What If...?</h3><p>2021</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/gaviao-arqueiro.png" alt="Capa de Gavião Arqueiro" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Gavião Arqueiro</h3><p>2021</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-wide"><img src="assets/posters/wandavision.png" alt="Capa de WandaVision" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>WandaVision</h3><p>2021</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-wide"><img src="assets/posters/loki.png" alt="Capa de Loki" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Loki</h3><p>2021</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-wide"><img src="assets/posters/loki-temporada-2.png" alt="Capa de Loki (2ª Temporada)" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Loki (2ª Temporada)</h3><p>2023</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/deadpool.png" alt="Capa de Deadpool" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Deadpool</h3><p>2016</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/deadpool-2.jpg" alt="Capa de Deadpool 2" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Deadpool 2</h3><p>2018</p></div></div></article>
+      <article class="timeline-item highlight"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/logan.jpg" alt="Capa de Logan" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Logan</h3><p>2017</p></div></div></article>
+      <article class="timeline-item highlight"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/deadpool-e-wolverine.jpg" alt="Capa de Deadpool &amp; Wolverine" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Deadpool &amp; Wolverine</h3><p>2024</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-wide"><img src="assets/posters/falcao-e-o-soldado-invernal.png" alt="Capa de O Falcão e o Soldado Invernal" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>O Falcão e o Soldado Invernal</h3><p>2021</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-aranha-longe-de-casa.jpg" alt="Capa de Homem-Aranha: Longe de Casa" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem-Aranha: Longe de Casa</h3><p>2019</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/eternos.jpg" alt="Capa de Eternos" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Eternos</h3><p>2021</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-aranha-sem-volta-para-casa.jpg" alt="Capa de Homem-Aranha: Sem Volta Para Casa" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem-Aranha: Sem Volta Para Casa</h3><p>2021</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/moon-knight.jpg" alt="Capa de Moon Knight" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Moon Knight</h3><p>2022</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/doutor-estranho-multiverso-da-loucura.jpg" alt="Capa de Doutor Estranho no Multiverso da Loucura" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Doutor Estranho no Multiverso da Loucura</h3><p>2022</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/ms-marvel.jpg" alt="Capa de Ms. Marvel" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Ms. Marvel</h3><p>2022</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/thor-amor-e-trovao.jpg" alt="Capa de Thor: Amor e Trovão" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Thor: Amor e Trovão</h3><p>2022</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/she-hulk.jpg" alt="Capa de She-Hulk: Advogada" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>She-Hulk: Advogada</h3><p>2022</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/guardioes-especial-de-natal.jpg" alt="Capa de Guardiões da Galáxia: Especial de Natal" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Guardiões da Galáxia: Especial de Natal</h3><p>2022</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-wide"><img src="assets/posters/gaviao-arqueiro.png" alt="Capa de Gavião Arqueiro" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Gavião Arqueiro</h3><p>2021</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-wide"><img src="assets/posters/what-if.png" alt="Capa de What If...?" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>What If...?</h3><p>2021</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-wide"><img src="assets/posters/moon-knight.jpg" alt="Capa de Moon Knight" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Moon Knight</h3><p>2022</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/pantera-negra-wakanda-para-sempre.jpg" alt="Capa de Pantera Negra: Wakanda Para Sempre" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Pantera Negra: Wakanda Para Sempre</h3><p>2022</p></div></div></article>
-    </div>
-  </section>
-
-  <section class="phase-section" id="fase5">
-    <div class="phase-header saga-multiverso">
-      <span class="phase-tag">Fase 5</span>
-      <h2>A Saga do Multiverso: Continuação</h2>
-      <p>2023 a 2024</p>
-    </div>
-    <div class="timeline">
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/thor-amor-e-trovao.jpg" alt="Capa de Thor: Amor e Trovão" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Thor: Amor e Trovão</h3><p>2022</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-formiga-quantumania.jpg" alt="Capa de Homem-Formiga e a Vespa: Quantumania" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem-Formiga e a Vespa: Quantumania</h3><p>2023</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/invasao-secreta.jpg" alt="Capa de Invasão Secreta" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Invasão Secreta</h3><p>2023</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/guardioes-da-galaxia-vol-3.jpg" alt="Capa de Guardiões da Galáxia Vol. 3" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Guardiões da Galáxia Vol. 3</h3><p>2023</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/loki-temporada-2.png" alt="Capa de Loki (2ª Temporada)" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Loki (2ª Temporada)</h3><p>2023</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/echo.jpg" alt="Capa de Echo" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Echo</h3><p>2024</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/agatha-aflicao.jpg" alt="Capa de Agatha Aflição" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Agatha Aflição</h3><p>2024</p></div></div></article>
-      <article class="timeline-item highlight"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/deadpool-e-wolverine.jpg" alt="Capa de Deadpool &amp; Wolverine" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Deadpool &amp; Wolverine</h3><p>2024</p></div></div></article>
-    </div>
-  </section>
-
-  <section class="phase-section" id="fase6">
-    <div class="phase-header saga-multiverso">
-      <span class="phase-tag">Fase 6</span>
-      <h2>A Saga do Multiverso: Desfecho</h2>
-      <p>2025 a 2027</p>
-    </div>
-    <div class="timeline">
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/demolidor-renascido.jpg" alt="Capa de Demolidor: Renascido" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Demolidor: Renascido</h3><p>2025</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/as-marvels.jpg" alt="Capa de As Marvels" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>As Marvels</h3><p>2023</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-wide"><img src="assets/posters/agatha-aflicao.jpg" alt="Capa de Agatha Aflição" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Agatha Aflição</h3><p>2024</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-wide"><img src="assets/posters/visionquest.jpg" alt="Capa de VisionQuest" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>VisionQuest</h3><p>2026</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-wide"><img src="assets/posters/demolidor-renascido.jpg" alt="Capa de Demolidor: Renascido" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Demolidor: Renascido</h3><p>2025</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/capitao-america-admiravel-mundo-novo.jpg" alt="Capa de Capitão América: Admirável Mundo Novo" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Capitão América: Admirável Mundo Novo</h3><p>2025</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/thunderbolts.jpg" alt="Capa de Thunderbolts*" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Thunderbolts*</h3><p>2025</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/quarteto-fantastico-primeiros-passos.jpg" alt="Capa de Quarteto Fantástico: Primeiros Passos" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Quarteto Fantástico: Primeiros Passos</h3><p>2025</p></div></div></article>
+      <article class="timeline-item highlight"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/thunderbolts.jpg" alt="Capa de Thunderbolts*" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Thunderbolts*</h3><p>2025</p></div></div></article>
+      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-wide"><img src="assets/posters/demolidor-renascido.jpg" alt="Capa de Demolidor: Renascido (2ª Temporada)" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type serie">Série</span><h3>Demolidor: Renascido (2ª Temporada)</h3><p>2026</p></div></div></article>
+      <article class="timeline-item highlight"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/homem-aranha-um-novo-dia.jpg" alt="Capa de Homem-Aranha: Um Novo Dia" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Homem-Aranha: Um Novo Dia</h3><p>2026</p></div></div></article>
       <article class="timeline-item highlight upcoming"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/vingadores-doomsday.jpg" alt="Capa de Vingadores: Doomsday" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Vingadores: Doomsday</h3><p>2026 (previsto)</p></div></div></article>
       <article class="timeline-item highlight upcoming"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster poster-placeholder"><span>VS</span></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Vingadores: Guerra Secreta</h3><p>2027 (previsto)</p></div></div></article>
     </div>
@@ -156,8 +119,8 @@
 
   <section class="phase-section fox" id="foxverse">
     <div class="phase-header saga-fox">
-      <span class="phase-tag">Fora do MCU</span>
-      <h2>Universo Fox: X-Men, Wolverine &amp; Deadpool</h2>
+      <span class="phase-tag">Extra</span>
+      <h2>X-Men</h2>
       <p>2000 a 2020 · 20th Century Fox / Studios</p>
     </div>
     <div class="timeline">
@@ -168,19 +131,15 @@
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/x-men-primeira-classe.jpg" alt="Capa de X-Men: Primeira Classe" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>X-Men: Primeira Classe</h3><p>2011</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/wolverine-imortal.jpg" alt="Capa de Wolverine: Imortal" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Wolverine: Imortal</h3><p>2013</p></div></div></article>
       <article class="timeline-item highlight"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/x-men-dias-de-um-futuro-esquecido.jpg" alt="Capa de X-Men: Dias de um Futuro Esquecido" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>X-Men: Dias de um Futuro Esquecido</h3><p>2014</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/deadpool.png" alt="Capa de Deadpool" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Deadpool</h3><p>2016</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/x-men-apocalipse.jpg" alt="Capa de X-Men: Apocalipse" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>X-Men: Apocalipse</h3><p>2016</p></div></div></article>
-      <article class="timeline-item highlight"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/logan.jpg" alt="Capa de Logan" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Logan</h3><p>2017</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/deadpool-2.jpg" alt="Capa de Deadpool 2" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Deadpool 2</h3><p>2018</p></div></div></article>
       <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/x-men-fenix-negra.png" alt="Capa de X-Men: Fênix Negra" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>X-Men: Fênix Negra</h3><p>2019</p></div></div></article>
-      <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><div class="poster"><img src="assets/posters/novos-mutantes.jpg" alt="Capa de Novos Mutantes" loading="lazy" width="300" height="445"></div><div class="poster-info"><span class="card-type film">Filme</span><h3>Novos Mutantes</h3><p>2020</p></div></div></article>
     </div>
   </section>
 
 </main>
 
 <footer>
-  <p>Feito com 🕷️ por <a href="https://github.com/devrafcks" target="_blank" rel="noopener">devrafcks</a> · Ordem MCU</p>
+  <p>Atualizado em agosto de 2026</p>
 </footer>
 
 <script src="script.js"></script>
