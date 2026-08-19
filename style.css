@@ -36,35 +36,6 @@ body {
   border-bottom: 1px solid var(--card-border);
 }
 
-.hero-canvas {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  display: block;
-  transition: transform 0.4s ease-out;
-}
-
-.hero-nebula {
-  position: absolute;
-  inset: -25%;
-  z-index: 0;
-  pointer-events: none;
-  mix-blend-mode: screen;
-  filter: blur(50px) saturate(1.3);
-  background:
-    radial-gradient(circle at 28% 32%, rgba(147, 51, 234, 0.38), transparent 55%),
-    radial-gradient(circle at 72% 62%, rgba(230, 36, 41, 0.3), transparent 55%),
-    radial-gradient(circle at 50% 92%, rgba(46, 111, 217, 0.26), transparent 60%);
-  animation: nebula-drift 24s ease-in-out infinite alternate;
-  transition: transform 0.4s ease-out;
-}
-
-@keyframes nebula-drift {
-  0% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  50% { transform: translate(-3%, 2%) rotate(4deg) scale(1.08); }
-  100% { transform: translate(2%, -3%) rotate(-3deg) scale(1.03); }
-}
-
 .hero-bg {
   position: absolute;
   inset: -12% -5%;
@@ -73,10 +44,8 @@ body {
   background-repeat: no-repeat;
   will-change: transform;
   z-index: 1;
-  opacity: 0.82;
+  opacity: 1;
   filter: saturate(1.05) contrast(1.05);
-  mask-image: radial-gradient(circle at 50% 38%, black 42%, transparent 78%);
-  -webkit-mask-image: radial-gradient(circle at 50% 38%, black 42%, transparent 78%);
 }
 
 .hero-overlay {
@@ -84,8 +53,8 @@ body {
   inset: 0;
   z-index: 2;
   background:
-    radial-gradient(circle at 50% 30%, rgba(10, 10, 13, 0.3), rgba(10, 10, 13, 0.7) 65%),
-    linear-gradient(180deg, rgba(10,10,13,0.3) 0%, rgba(10,10,13,0.5) 45%, var(--bg) 100%);
+    radial-gradient(circle at 50% 30%, rgba(10, 10, 13, 0.35), rgba(10, 10, 13, 0.75) 65%),
+    linear-gradient(180deg, rgba(10,10,13,0.35) 0%, rgba(10,10,13,0.55) 45%, var(--bg) 100%);
 }
 
 .hero-inner { max-width: 780px; margin: 0 auto; position: relative; z-index: 3; perspective: 700px; }
@@ -171,37 +140,65 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
+  background: rgba(10, 10, 13, 0.72);
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  border-bottom: 1px solid var(--card-border);
+  box-shadow: 0 8px 24px -18px rgba(0, 0, 0, 0.8);
+}
+
+.phase-nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.5rem;
+}
+
+.phase-nav-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 0.9rem 1rem;
-  background: rgba(10, 10, 13, 0.9);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--card-border);
+  gap: 0.3rem;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
+
+.phase-nav-links::-webkit-scrollbar { display: none; }
 
 .phase-nav a {
   color: var(--text-dim);
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   font-weight: 600;
-  padding: 0.4rem 0.9rem;
+  white-space: nowrap;
+  padding: 0.45rem 0.85rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  transition: all 0.2s ease;
+  position: relative;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
-.phase-nav a:hover {
+.phase-nav-links a:hover {
   color: var(--text);
-  background: var(--card-bg);
+  background: rgba(255, 255, 255, 0.06);
   border-color: var(--card-border);
 }
 
-.phase-nav a.active {
+.phase-nav-links a.active {
   color: var(--bg);
-  background: var(--gold);
+  background: linear-gradient(120deg, var(--gold), #f0c85a);
   border-color: var(--gold);
+  font-weight: 800;
+  box-shadow: 0 4px 14px -4px rgba(212, 165, 55, 0.55);
+}
+
+.nav-progress {
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--red), var(--gold), var(--fox-blue));
+  transition: width 0.1s linear;
 }
 
 /* ---------- Intro ---------- */
@@ -380,6 +377,17 @@ main {
   object-fit: cover;
   display: block;
   transition: transform 0.35s ease;
+}
+
+/* Series logo images from Wikipedia are landscape wordmarks, not portrait posters:
+   give them a shorter banner-shaped box instead of cropping/zooming into a sliver of the logo. */
+.poster-wide {
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(160deg, #1d1d24, #101015);
+}
+
+.poster-wide img {
+  object-fit: cover;
 }
 
 .timeline-item:hover .poster img { transform: scale(1.06); }
