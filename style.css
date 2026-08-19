@@ -16,11 +16,88 @@
 
 html { scroll-behavior: smooth; }
 
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 100;
+  background: var(--gold);
+  color: var(--bg);
+  font-weight: 800;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
+}
+
+/* ---------- Ambient gradient-bars background (hero downward) ---------- */
+.page-body {
+  position: relative;
+  background: var(--bg);
+}
+
+.gradient-bars-bg {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  margin-bottom: -100vh;
+  z-index: 5;
+  display: flex;
+  overflow: hidden;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.gbar {
+  flex: 1 0 0;
+  height: 100%;
+  background: linear-gradient(to top, rgba(230, 36, 41, 0.4), transparent 70%);
+  transform-origin: bottom;
+  transform: scaleY(var(--h));
+  animation: gbar-pulse 2.4s ease-in-out infinite alternate;
+  animation-delay: var(--d);
+  will-change: transform;
+}
+
+@keyframes gbar-pulse {
+  0% { transform: scaleY(var(--h)); }
+  100% { transform: scaleY(calc(var(--h) * 0.7)); }
+}
+
+.gbar:nth-child(1)  { --h: 1;    --d: 0s; }
+.gbar:nth-child(2)  { --h: 0.88; --d: 0.1s; }
+.gbar:nth-child(3)  { --h: 0.77; --d: 0.2s; }
+.gbar:nth-child(4)  { --h: 0.66; --d: 0.3s; }
+.gbar:nth-child(5)  { --h: 0.56; --d: 0.4s; }
+.gbar:nth-child(6)  { --h: 0.47; --d: 0.5s; }
+.gbar:nth-child(7)  { --h: 0.37; --d: 0.6s; }
+.gbar:nth-child(8)  { --h: 0.30; --d: 0.7s; }
+.gbar:nth-child(9)  { --h: 0.37; --d: 0.8s; }
+.gbar:nth-child(10) { --h: 0.47; --d: 0.9s; }
+.gbar:nth-child(11) { --h: 0.56; --d: 1.0s; }
+.gbar:nth-child(12) { --h: 0.66; --d: 1.1s; }
+.gbar:nth-child(13) { --h: 0.77; --d: 1.2s; }
+.gbar:nth-child(14) { --h: 0.88; --d: 1.3s; }
+.gbar:nth-child(15) { --h: 1;    --d: 1.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .gbar { animation: none; }
 }
 
 /* ---------- Hero ---------- */
