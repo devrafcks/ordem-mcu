@@ -46,7 +46,6 @@ body {
   line-height: 1.5;
 }
 
-/* ---------- Minimalist grid background (hero downward) ---------- */
 .page-body {
   position: relative;
   background: var(--bg);
@@ -68,7 +67,6 @@ body {
   -webkit-mask-image: radial-gradient(circle at 50% 0%, black 0%, transparent 75%);
 }
 
-/* ---------- Hero ---------- */
 .hero {
   position: relative;
   min-height: 92vh;
@@ -180,7 +178,6 @@ body {
   .hero-nebula { animation: none; }
 }
 
-/* ---------- Nav ---------- */
 .phase-nav {
   position: sticky;
   top: 0;
@@ -246,7 +243,6 @@ body {
   transition: width 0.1s linear;
 }
 
-/* ---------- Intro ---------- */
 .intro-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -275,7 +271,6 @@ body {
 
 .intro-inner strong { color: var(--text); }
 
-/* ---------- Sections ---------- */
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -319,7 +314,6 @@ main {
   font-size: 0.95rem;
 }
 
-/* ---------- Timeline ---------- */
 .timeline {
   position: relative;
   padding: 0.5rem 0 0.5rem;
@@ -407,7 +401,6 @@ main {
   box-shadow: 0 0 0 4px var(--bg), 0 0 0 5px rgba(46, 111, 217, 0.5);
 }
 
-/* ---------- Poster ---------- */
 .poster {
   position: relative;
   width: 100%;
@@ -424,8 +417,6 @@ main {
   transition: transform 0.35s ease;
 }
 
-/* Series logo images from Wikipedia are landscape wordmarks, not portrait posters:
-   give them a shorter banner-shaped box instead of cropping/zooming into a sliver of the logo. */
 .poster-wide {
   aspect-ratio: 16 / 9;
   background: linear-gradient(160deg, #1d1d24, #101015);
@@ -543,7 +534,6 @@ main {
   }
 }
 
-/* ---------- Footer ---------- */
 footer {
   text-align: center;
   padding: 2.5rem 1rem 3rem;

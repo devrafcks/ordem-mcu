@@ -4,7 +4,6 @@
   var heroTitle = document.getElementById("hero-title");
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // Split hero title into per-letter spans for the staggered entrance animation
   if (heroTitle) {
     var counter = 0;
     (function splitChars(node) {
@@ -72,7 +71,6 @@
     });
   }
 
-  // Reading progress bar under the sticky nav
   var navProgress = document.getElementById("nav-progress");
   if (navProgress) {
     var progressTicking = false;
